@@ -6,7 +6,8 @@ const { createApp } = Vue
     
         return {
     
-    
+            toDoList: [],
+
         }
     },
 
@@ -15,7 +16,8 @@ const { createApp } = Vue
         axios
             .get('./api.php')
             .then((response) => {
-                console.log(response.data)
+                console.log(response.data.list);
+                this.toDoList = response.data.list
             })
 
     },
