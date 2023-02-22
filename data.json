@@ -1,0 +1,22 @@
+[
+    {
+        "task": "Fare la spesa",
+        "completed": false
+    },
+    {
+        "task": "Pulire la casa",
+        "completed": false
+    },
+    {
+        "task": "Fare l'esercizio di matematica",
+        "completed": true
+    },
+    {
+        "task": "Chiamare il dottore",
+        "completed": false
+    },
+    {
+        "task": "Preparare la valigia per il viaggio",
+        "completed": false
+    }
+]

@@ -8,6 +8,16 @@ const { createApp } = Vue
     
     
         }
-    }
+    },
+
+    created() {
+       
+        axios
+            .get('./api.php')
+            .then((response) => {
+                console.log(response.data)
+            })
+
+    },
   
 }).mount('#app');
