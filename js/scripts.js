@@ -6,7 +6,6 @@ const { createApp } = Vue
     
         return {
     
-            message: 'Hello Vue!',
     
         }
     }
