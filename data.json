@@ -5,15 +5,15 @@
     },
     {
         "task": "Pulire la casa",
-        "completed": false
-    },
-    {
-        "task": "Fare l'esercizio di matematica",
         "completed": true
     },
     {
-        "task": "Chiamare il dottore",
+        "task": "Fare l'esercizio di matematica",
         "completed": false
+    },
+    {
+        "task": "Chiamare il dottore",
+        "completed": true
     },
     {
         "task": "Preparare la valigia per il viaggio",

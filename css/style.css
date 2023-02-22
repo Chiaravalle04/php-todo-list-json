@@ -5,4 +5,92 @@
     box-sizing: border-box;
 }
 
+/* Font */ 
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Variabili */
+:root {
+    --bg-color: #042940;
+    --container-list: #9FC131;
+    --list-item: #005C53;
+    --input-color: #D6D58E;
+}
+
+/* Regole Generali */
+ul {
+    list-style: none;
+}
+
+.task-completed {
+    text-decoration: line-through;
+}
+
 /* Main */
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+
+.container-todo {
+    border-radius: 20px;
+    padding: 40px;
+    background-color: var(--container-list);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: var(--bg-color);
+}
+
+ul li {
+    width: 500px;
+    height: 70px;
+    margin: 5px 0;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: var(--list-item);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+i {
+    color: var(--input-color);
+    cursor: pointer;
+}
+
+.container-todo form input, button {
+    display: inline-block;
+    margin-top: 20px;
+    height: 50px;
+    border: none;
+    font-weight: bold;
+}
+
+.container-todo form input {
+    width: 85%;
+    padding: 15px;
+    border-radius: 10px 0 0 10px;
+    color: var(--bg-color);
+}
+
+.container-todo form input:focus {
+    outline: none;
+}
+
+.container-todo form button {
+    width: 15%;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    color: var(--bg-color);
+    background-color: var(--input-color);
+}
+
