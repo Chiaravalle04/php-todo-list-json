@@ -20,17 +20,26 @@ const { createApp } = Vue
     methods: {
 
         addTask() {
+            
             axios
-            .post('./create.php', 
-            { 
-                addTask: this.newTask
-            },
-            { 
-                headers: { 'Content-Type': 'multipart/form-data' }
-            })
-            .then((response) => {
-                this.toDoList.push(this.newTask)
-            })
+                .post('./create.php', 
+                    { 
+                        addTask: this.newTask
+                    },
+                    { 
+                        headers: { 'Content-Type': 'multipart/form-data' }
+                    }
+                )
+                .then((response) => {
+                    this.toDoList.push(this.newTask);
+                    this.newTask.task = "";
+                });
+        },
+
+        taskCompleted(item) {
+
+            item.completed = !item.completed
+
         }
 
     },

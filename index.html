@@ -36,7 +36,7 @@
 
                         <li v-for="item in toDoList">
 
-                            <p :class="{'task-completed' : item.completed === true}">{{ item.task }}</p>
+                            <p @click="taskCompleted(item)" :class="{'task-completed' : item.completed === true}">{{ item.task }}</p>
 
                             <i class="fa-solid fa-trash fa-xl"></i>
 

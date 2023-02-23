@@ -62,6 +62,10 @@ ul li {
     align-items: center;
 }
 
+ul li p {
+    cursor: pointer;
+}
+
 i {
     color: var(--input-color);
     cursor: pointer;
