@@ -5,7 +5,7 @@
     },
     {
         "task": "Pulire la casa",
-        "completed": true
+        "completed": false
     },
     {
         "task": "Fare l'esercizio di matematica",
@@ -13,7 +13,7 @@
     },
     {
         "task": "Chiamare il dottore",
-        "completed": true
+        "completed": false
     },
     {
         "task": "Preparare la valigia per il viaggio",

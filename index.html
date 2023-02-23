@@ -44,9 +44,9 @@
 
                     </ul>
 
-                    <form action="" method="get">
+                    <form action="create.php" method="post" @submit.prevent="addTask()">
 
-                        <input type="text" placeholder="Inserisci elemento...">
+                        <input type="text" placeholder="Inserisci elemento..." v-model="newTask.task">
 
                         <button type="submit">Inserisci</button>
 
