@@ -31,7 +31,10 @@ const { createApp } = Vue
                     }
                 )
                 .then((response) => {
-                    this.toDoList.push(this.newTask);
+                    this.toDoList.push({
+                        task: this.newTask.task,
+                        completed: this.newTask.completed
+                    })
                     this.newTask.task = "";
                 });
         },
